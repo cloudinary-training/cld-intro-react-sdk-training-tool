@@ -1,7 +1,7 @@
 {
   "name": "cld-intro-react-sdk-training-tool",
   "version": "1.0.0",
-  "homepage": "https://cloudinary-training.github.io/cld-intro-react-sdk-training-tool",
+  "homepage":"https://cloudinary-training.github.io/cld-intro-react-sdk-training-tool",
   "private": true,
   "dependencies": {
     "@cloudinary/react": "^1.9.0",

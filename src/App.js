@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import AddingTransformationsPage from "./pages/AddingTransformations";
 import ResizeScalePage from "./pages/ResizeScalePage";
 import Responsive from "./pages/Responsive";
@@ -25,7 +25,7 @@ import VideoOnlyPage from "./pages/VideoOnlyPage";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<UploadWidgetPage />} />
@@ -69,7 +69,7 @@ function App() {
             <Route path="/lazyload" element={<LazyLoad />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
