@@ -1,0 +1,17 @@
+Image Only Effects to try
+advancedRedEye())
+accelerate())
+blackwhite())
+blackwhite(10))
+blackwhite().threshold(20))
+grayscale())
+negate())
+redEye())
+sepia())
+sepia(100))
+sepia().level(5))
+vignette())
+vignette(100))
+vignette().strength(5))
+
+   
