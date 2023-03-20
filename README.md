@@ -42,3 +42,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
 
+## Deployment
+This code is deployed to https://cloudinary-training.github.io/cld-intro-react-sdk-training-tool/ using GitHub Pages.
+The code is maintained in the `main` branch, so continue to push changes there.  When you're ready to host the changes, run `npm run deploy`.  This will call the `predeploy` script which will build the project in a folder named build and then commit to the `gh-pages` branch.  This branch will be served on github.io. 
+Read more [here](https://github.com/gitname/react-gh-pages).
