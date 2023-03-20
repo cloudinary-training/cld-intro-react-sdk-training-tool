@@ -208,13 +208,13 @@ export default function Layout() {
           <p>© 2023 Cloudinary Customer Education</p>
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a href="https://github.com/rebeccapeltz/cld-training-react">
+          <a href="https://github.com/clouidnary-training/cld-intro-react-sdk-training-tool">
             <img
               title="Source code for this application"
               target="_blank"
               height="24px"
               width="24px"
-              src="/images/github-icon.png"
+              src="https://res.cloudinary.com/cloudinary-training/image/upload/v1679323795/react-training/github-icon.png"
               alt="Cloudinary Community"
             />
           </a>
@@ -224,7 +224,7 @@ export default function Layout() {
               target="_blank"
               height="24px"
               width="24px"
-              src="/images/discord-icon.png"
+              src="https://res.cloudinary.com/cloudinary-training/image/upload/v1679323795/react-training/discord-icon.png"
               alt="Cloudinary Community"
             />
           </a>
@@ -234,7 +234,7 @@ export default function Layout() {
               target="_blank"
               height="30px"
               width="30px"
-              src="/images/cloudinary_cloud_glyph_white_png.png"
+              src="https://res.cloudinary.com/cloudinary-training/image/upload/v1679323795/react-training/cloudinary_cloud_glyph_white_png.png"
               alt="Cloudinary Community"
             />
           </a>
