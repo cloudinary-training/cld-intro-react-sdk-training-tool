@@ -15,7 +15,8 @@ cloud: {
 });
 
 // working with audio
-const music = cld.video("barouqe")
+const music = cld.video("fireflywav")
+  .format("mp3")
   .transcode(audioCodec("mp3"))
   .transcode(bitRate("44k"));
 const musicURL = music.toURL();
