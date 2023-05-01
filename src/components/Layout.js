@@ -5,7 +5,7 @@ import { useState } from "react";
 export default function Layout() {
   let activeClassName = "text-cldcoral";
   let dividerStyle = "font-sans font-bold bg-clddarkblue text-white pl-1";
-  let titleStyle = "font-sans text-sm lg:text-lg font-semibold bg-cldgray text-black pl-4";
+  let titleStyle = "font-sans text-sm lg:text-lg bg-cldgray text-black pl-4";
   const [hideAside, setHidAside] = useState(false);
 
   const handleChange = () => {
@@ -162,10 +162,10 @@ export default function Layout() {
 
   return (
     <div className="bg-cldgray min-h-screen flex flex-col">
-      <header className="bg-cldgray sticky top-0 h-14 flex justify-center items-center font-semibold uppercase">
-        <div className="text-lg font-sans text-clddarkblue">
+      <header className="bg-cldgray sticky top-0 h-14 flex justify-center items-center">
+        <div className="text-xl font-sans text-clddarkblue">
           {" "}
-          Upload, Transform, Deliver with Cloudinary React SDK
+          Introduction to Cloudinary using the React SDK
         </div>
       </header>
 
