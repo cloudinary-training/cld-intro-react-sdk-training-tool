@@ -8,7 +8,7 @@ export default function App() {
   const cldVideo = new CloudinaryVideo('climbing',{cloudName: 'cloudinary-training'}); 
   return (
     <div>
-      <AdvancedVideo height="300px" width="auto" cldVid={cldVideo} />
+      <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideo} />
     </div>
   )
 }`;
@@ -25,8 +25,8 @@ export default function App() {
   const cldVideo2 = cld.video('hike-up');
   return (
     <div>
-    <AdvancedVideo height="300px" width="auto" cldVid={cldVideo1} />
-    <AdvancedVideo height="300px" width="auto" cldVid={cldVideo2} />
+    <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideo1} />
+    <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideo2} />
 
     </div>
   )
