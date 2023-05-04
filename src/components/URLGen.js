@@ -4,7 +4,7 @@ import Experiment from "./experiments";
 
 const cloudinaryImageURLs = `import {Cloudinary,CloudinaryImage} from "@cloudinary/url-gen";
 export default function App() {
-  // instantiate Cloudinary and call it's image function
+  // instantiate Cloudinary and call its image function
   // use toURL() to create a URL and use it in an HTML image element
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}}); 
   const cldImage = cld.image('cld-sample');
@@ -27,7 +27,7 @@ export default function App() {
 
 const cloudinaryVideoURLs = `import {Cloudinary,CloudinaryVideo} from "@cloudinary/url-gen";
 export default function App() {
-  // instantiate Cloudinary and call it's video function
+  // instantiate Cloudinary and call its video function
   // use toURL() to create a URL and use it in an HTML video element
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}}); 
   const cldVideo = cld.video('hike-up');

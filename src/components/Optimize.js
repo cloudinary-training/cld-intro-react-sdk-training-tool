@@ -7,7 +7,7 @@ import { AdvancedImage} from "@cloudinary/react";
 import { fill } from "@cloudinary/url-gen/actions/resize";
 
 export default function App() {
-  // instantiate Cloudinary and call it's image function
+  // instantiate Cloudinary and call its image function
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}});
   const cldImage = cld.image('cld-sample');
   const cldImageOptimize = cld.image('cld-sample');
@@ -29,7 +29,7 @@ import { AdvancedVideo} from "@cloudinary/react";
 import { fill } from "@cloudinary/url-gen/actions/resize";
 
 export default function App() {
-  // instantiate Cloudinary and call it's video function
+  // instantiate Cloudinary and call its video function
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}});
   const cldVideo = cld.video('dog-frisbee');
   const cldVideoOptimize = cld.video('dog-frisbee');
