@@ -8,7 +8,7 @@ export default function App() {
   const cldImage = new CloudinaryImage('cld-sample',{cloudName: 'cloudinary-training'}); 
   return (
     <div>
-      <AdvancedImage height="300px" width="auto" alt="Sample Image" cldImg={cldImage} />
+      <AdvancedImage height="300px" alt="Sample Image" cldImg={cldImage} />
     </div>
   )
 }`;
@@ -24,8 +24,8 @@ export default function App() {
   const cldImage2 = cld.image('cld-sample-2');
   return (
     <div>
-    <AdvancedImage height="300px" width="auto" alt="Sample Image 1" cldImg={cldImage1} />
-    <AdvancedImage height="300px" width="auto" alt="Sample Image 2" cldImg={cldImage2} />
+    <AdvancedImage height="300px" alt="Sample Image 1" cldImg={cldImage1} />
+    <AdvancedImage height="300px" alt="Sample Image 2" cldImg={cldImage2} />
     </div>
   )
 }`;
@@ -41,7 +41,7 @@ export default function RenderingAdvancedImage() {
         AdvancedImage: Deliver Image Elements from a CDN
       </h2>
       <Experiment
-        codeString={`<img height="300px" width="auto" alt="Sample Image" src="https://res.cloudinary.com/cloudinary-training/image/upload/cld-sample?_a=AJARNWI0">`}
+        codeString={`<img height="300px" alt="Sample Image" src="https://res.cloudinary.com/cloudinary-training/image/upload/cld-sample?_a=AJARNWI0">`}
         experimentTitle={"Experiment by examining the image element."} 
         notes={"All Cloudinary assets are delivered via CDN. This is a big step in optimization. The AdvancedImage component creates an HTML5 images elements. You can include HTML5 image attributes such as width, height and alt. In addition we'll see how to include plugins that will provide lazy loading, placeholders, responsive image, and accessibility. You only need to specify a Cloudinary Cloud Name and Public ID to create an image object. Once you have that object, you can hand it off to the AdvancedImage component to render it."} 
         instructions={[

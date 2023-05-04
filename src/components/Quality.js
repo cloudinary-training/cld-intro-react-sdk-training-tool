@@ -15,9 +15,9 @@ export default function App() {
   return (
     <div>
     <p> <a target="_blank" href={cldImage.toURL()}>{cldImage.toURL()}</a></p>
-    <AdvancedImage height="300px" width="auto" cldImg={cldImage} />
+    <AdvancedImage height="300px" cldImg={cldImage} />
     <p> <a target="_blank" href={cldImageQ.toURL()}>{cldImageQ.toURL()}</a></p>
-    <AdvancedImage height="300px" width="auto" cldImg={cldImageQ} />
+    <AdvancedImage height="300px" cldImg={cldImageQ} />
     </div>
   )
 }`;

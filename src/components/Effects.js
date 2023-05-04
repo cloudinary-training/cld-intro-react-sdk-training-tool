@@ -65,9 +65,9 @@ export default function App() {
        face in the image to focus on.
       </p>
       <div>
-        <AdvancedImage height="300px" width="auto" alt="Sample" cldImg={cldGrayScale} />
-        <AdvancedImage height="300px" width="auto" alt="Sample" cldImg={cldSepia} />
-        <AdvancedImage height="300px" width="auto" alt="Sample" cldImg={cldBlackclddarkblue} />
+        <AdvancedImage height="300px" alt="Sample" cldImg={cldGrayScale} />
+        <AdvancedImage height="300px" alt="Sample" cldImg={cldSepia} />
+        <AdvancedImage height="300px" alt="Sample" cldImg={cldBlackclddarkblue} />
       </div>
     </div>
   )
