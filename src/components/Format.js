@@ -58,11 +58,11 @@ export default function App() {
   return (
     <div>
       <p>No transformations: <a target="_blank" href={cldVideo.toURL()}>{cldVideo.toURL()}</a></p>
-        <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideo} />
+        <AdvancedVideo controls height="300" cldVid={cldVideo} />
       <p>Add f_auto: <a target="_blank" href={cldVideoAutoFormat.toURL()}>{cldVideoAutoFormat.toURL()}</a></p>
-        <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideoAutoFormat} />
+        <AdvancedVideo controls height="300" cldVid={cldVideoAutoFormat} />
       <p>GIF: <a target="_blank" href={cldGIF.toURL()}>{cldGIF.toURL()}</a></p>
-        <AdvancedImage  height="300px" width="auto" cldImg={cldGIF} />
+        <AdvancedImage  height="300" cldImg={cldGIF} />
     </div>
   )
 }`;
@@ -105,7 +105,7 @@ cldImage.format("png");`}
   const cldGIFtoMP4 = cld.image("earth-spinning-GIF");
   console.log(cldGIFtoMP4.format("mp4").toURL());
   <p>Convert GIF to video: <a target="_blank" href={cldGIFToVideo.toURL()}>{cldGIFToVideo.toURL()}</a></p>
-  <AdvancedVideo controls height="300px" width="auto" cldVid={cldGIFToVideo} />`}
+  <AdvancedVideo controls height="300" cldVid={cldGIFToVideo} />`}
         experimentTitle={
           "Experiment with converting GIFs to videos and the interchange between image and video formats"
         }

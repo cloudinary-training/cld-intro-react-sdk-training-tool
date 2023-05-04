@@ -1,10 +1,12 @@
-import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import js from "react-syntax-highlighter/dist/esm/languages/hljs/javascript";
-import docco from "react-syntax-highlighter/dist/esm/styles/hljs/docco";
-SyntaxHighlighter.registerLanguage("javascript", js);
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
+// import docco from "react-syntax-highlighter/dist/esm/styles/hljs/docco";
+import prism from "react-syntax-highlighter/dist/esm/styles/prism/prism";
+SyntaxHighlighter.registerLanguage("jsx", jsx);
 
 export default function UploadWidgetSyntax() {
-  const codeString = `import "../App.css";
+  const codeString = `
+  import "../App.css";
   import React, { useEffect, useState } from "react";
   
   export default function UploadWidget() {
@@ -138,7 +140,7 @@ export default function UploadWidgetSyntax() {
         </div>
         <div className="collapse-content">
           <div>
-            <SyntaxHighlighter language="javascript" style={docco}>
+            <SyntaxHighlighter language="javascript" style={prism}>
               {codeString}
             </SyntaxHighlighter>
           </div>

@@ -15,9 +15,9 @@ export default function App() {
   return (
     <div>
     <p> <a target="_blank" href={cldImage.toURL()}>{cldImage.toURL()}</a></p>
-    <AdvancedImage height="300px" width="auto" cldImg={cldImage} />
+    <AdvancedImage height="300" cldImg={cldImage} />
     <p> <a target="_blank" href={cldImageQ.toURL()}>{cldImageQ.toURL()}</a></p>
-    <AdvancedImage height="300px" width="auto" cldImg={cldImageQ} />
+    <AdvancedImage height="300" cldImg={cldImageQ} />
     </div>
   )
 }`;
@@ -34,10 +34,10 @@ export default function App() {
 
   return (
     <div>
-    <p> <a target="_blank" href={cldVideo.toURL()}>{cldVideo.toURL()}</a></p>
-    <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideo} />
+    <p> <a rel="noreferrer" target="_blank" href={cldVideo.toURL()}>{cldVideo.toURL()}</a></p>
+    <AdvancedVideo controls height="300" cldVid={cldVideo} />
     <p> <a target="_blank" href={cldVideoQ.toURL()}>{cldVideoQ.toURL()}</a></p>
-    <AdvancedVideo controls height="300px" width="auto" cldVid={cldVideoQ} />
+    <AdvancedVideo controls height="300" cldVid={cldVideoQ} />
     </div>
   )
 }`;

@@ -212,8 +212,8 @@ export default function Layout() {
             <img
               title="Source code for this application"
               target="_blank"
-              height="24px"
-              width="24px"
+              height="24"
+              width="24"
               src="https://res.cloudinary.com/cloudinary-training/image/upload/v1679323795/react-training/github-icon.png"
               alt="Cloudinary Community"
             />
@@ -222,8 +222,8 @@ export default function Layout() {
             <img
               title="Cloudinary Discord"
               target="_blank"
-              height="24px"
-              width="24px"
+              height="24"
+              width="24"
               src="https://res.cloudinary.com/cloudinary-training/image/upload/v1679323795/react-training/discord-icon.png"
               alt="Cloudinary Community"
             />
@@ -232,8 +232,8 @@ export default function Layout() {
             <img
               title="Cloudinary Community Forum"
               target="_blank"
-              height="30px"
-              width="30px"
+              height="30"
+              width="30"
               src="https://res.cloudinary.com/cloudinary-training/image/upload/v1679323795/react-training/cloudinary_cloud_glyph_white_png.png"
               alt="Cloudinary Community"
             />
