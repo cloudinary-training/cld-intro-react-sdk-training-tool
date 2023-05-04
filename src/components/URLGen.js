@@ -31,6 +31,8 @@ export default function App() {
   // use toURL() to create a URL and use it in an HTML video element
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}}); 
   const cldVideo = cld.video('hike-up');
+  const cldVideoURL = cldVideo.toURL(); 
+
 
   // instantiate CloudinaryVideo
   // use toURL() to create a URL and use it in an HTML image element
@@ -38,12 +40,12 @@ export default function App() {
   const cloudinaryVideoURL = cloudinaryVideo.toURL(); 
   return (
     <div>
-    <p>cldVideo:<br/> <a target="_blank" href={cloudinaryVideoURL}>{cloudinaryVideoURL}</a></p>
-    <video controls height="250px" width="auto" > 
-        <source src={cloudinaryVideoURL} type="video/mp4" />
+    <p>cldVideo:<br/> <a rel="noreferrer" target="_blank" href={cldVideoURL}>{cldVideoURL}</a></p>
+    <video controls height="250px" width="374" > 
+        <source src={cldVideoURL} type="video/mp4" />
     </video>
-    <p>cloudinaryVideo:<br/> <a target="_blank" href={cloudinaryVideoURL}>{cloudinaryVideo.toURL()}</a></p>
-    <video controls height="250px" width="auto"> 
+    <p>cloudinaryVideo:<br/> <a rel="noreferrer" target="_blank" href={cloudinaryVideoURL}>{cloudinaryVideo.toURL()}</a></p>
+    <video controls height="250px" width="374"> 
         <source src={cloudinaryVideoURL} type="video/mp4" />
     </video>
     </div>
