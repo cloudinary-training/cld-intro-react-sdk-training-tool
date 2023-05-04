@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* pickup the Inter var style */
 @import url('./font/stylesheet.css');
 

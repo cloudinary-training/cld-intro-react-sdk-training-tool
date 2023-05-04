@@ -13,7 +13,7 @@ export default function App() {
   // instantiate CloudinaryImage
   // use toURL() to create a URL and use it in an HTML image element
   const cloudinaryImage = new CloudinaryImage("cld-sample", { cloudName: "cloudinary-training" })
-  cloudinaryImageURL = cloudinaryImage.toURL();
+  const cloudinaryImageURL = cloudinaryImage.toURL();
 
   return (
     <div>
