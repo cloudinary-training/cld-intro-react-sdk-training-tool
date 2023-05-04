@@ -34,10 +34,10 @@ export default function App() {
 
   return (
     <div>
-    <p> <a target="_blank" href={cldVideo.toURL()}>{cldVideo.toURL()}</a></p>
-    <AdvancedVideo height="300px" width="auto" cldVid={cldVideo} />
+    <p> <a rel="noreferrer" target="_blank" href={cldVideo.toURL()}>{cldVideo.toURL()}</a></p>
+    <AdvancedVideo controls height="300px" cldVid={cldVideo} />
     <p> <a target="_blank" href={cldVideoQ.toURL()}>{cldVideoQ.toURL()}</a></p>
-    <AdvancedVideo height="300px" width="auto" cldVid={cldVideoQ} />
+    <AdvancedVideo controls height="300px" cldVid={cldVideoQ} />
     </div>
   )
 }`;
