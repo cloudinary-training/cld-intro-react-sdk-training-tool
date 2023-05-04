@@ -17,10 +17,10 @@ export default function App() {
 
   return (
     <div>
-    <p>cldImage:<br/> <a target="_blank" href={cldURL}>{cldURL}</a></p>
-    <img height="250px" width="auto" src={cldURL} />
+    <p>cldImage:<br/> <a rel="noreferrer" target="_blank" href={cldURL}>{cldURL}</a></p>
+    <img alt="person with dalmatian" height="250px" width="374" src={cldURL} />
     <p>cloudinaryImage:<br/> <a target="_blank" href={cloudinaryImageURL}>{cloudinaryImageURL}</a></p>
-    <img height="250px" width="auto" src={cloudinaryImageURL} />
+    <img alt="person with dalmatian" height="250px" width="374" src={cloudinaryImageURL} />
     </div>
   )
 }`;
