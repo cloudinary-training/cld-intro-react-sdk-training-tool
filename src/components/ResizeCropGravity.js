@@ -19,12 +19,12 @@ export default function App() {
 
 const cloudinaryAdvancedImage = `import {AdvancedImage} from '@cloudinary/react';
 import {CloudinaryImage} from "@cloudinary/url-gen";
-import { crop } from "@cloudinary/url-gen/actions/resize";
+import { fill } from "@cloudinary/url-gen/actions/resize";
 
 export default function App() {
   const image = new CloudinaryImage('cld-sample',{cloudName:'cloudinary-training'});
 
-  image.resize(crop().width(400).height(400).gravity("auto"));
+  image.resize(fill().width(400).height(400).gravity("auto"));
   return (
     <div>
       <AdvancedImage cldImg={image} />
@@ -41,10 +41,10 @@ export default function ResizeCropGravity() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image Resize Crop with Gravity
+        Image Resize Crop with Gravity - using a fill crop
       </h3>
       <Experiment
-        codeString={`image.resize(crop().width(400).height(400));`}
+        codeString={`image.resize(fill().width(400).height(400));`}
         experimentTitle={
           "Experiment by removing gravity from the transformation."
         }
@@ -60,7 +60,7 @@ export default function ResizeCropGravity() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Video Resize Crop with Gravity
+        Video Resize Crop with Gravity - using a fill crop
       </h3>
       <Experiment
         codeString={`video.resize(fill().width(244).height(400));`}
