@@ -1,14 +1,14 @@
-# Upload, Transform, Deliver with Cloudinary React SDK
+# Introduction to Cloudinary using the React SDK
 
-This project uses Sandpack to provide in app code sandboxes.  You can modify and run the code in each Sandbox. 
+This project uses Sandpack to provide in app code sandboxes.  You can modify and run the code in each sandbox. 
 
 ## Upload Widget
 
-You need to create an unsigned preset in order to use the Upload Widget in the Front End.  Cloudinary presets provide instructions that are executed during the upload.  The purpose of the unsigned preset is to allow for an upload in the Front End without having to expose your Cloud's API SECRET.  In the sandox code for this course, you will enter you upload preset name and cloud name to authorize the upload.
+You need to create an unsigned preset in order to use the Upload Widget in the frontend. Cloudinary presets provide instructions that are executed during the upload. The purpose of an unsigned preset is to allow for an upload in the frontend without having to expose your API SECRET.  In the app for this course, you will enter your upload preset name and your cloud name to authorize the upload.
 
-In order to create your unsigned preset, you will need to be be able to login to the cloud specified by the cloud name and go to the Upload Settings page.   If you haven't created an unsigned preset before, you'll need to click the link that authorizes creation of unsigned presets.  Once click, it will provide a statement that "Unsigned presets are enabled".  
+In order to create an unsigned preset, you will need to log into your Cloudinary account and go to the Upload section of your Product Environment Settings. If you haven't created an unsigned preset previously, you'll need to click the link that authorizes creation of unsigned presets.  Once clicked, it will state "Unsigned uploading enabled".  
 
-The authorization provided by the unsigned preset allows you to code and configure an Upload Widget on a web page without using the API SECRET which is used for backend uploads.  On the backend you can hide the API SECRET from your user.  Note that when you are using an unsigned preset, it is a good idea to require authentication and authorization to the web page that renders the Upload Widget.  This will prevent unwanted access to uploading to your cloud. 
+The authorization provided by an unsigned preset allows you to code and configure an Upload Widget on a web page without using the API SECRET, which is used for backend uploads. Your API SECRET should always be kept a secret.  Note that when you are using an unsigned preset, it is a good idea to require authentication and authorization to the web page that renders the Upload Widget.  This will prevent unwanted access/uploading to your cloud. 
 
 Link to image/gif showing how to create unsigned preset.
 
