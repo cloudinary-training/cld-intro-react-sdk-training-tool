@@ -18,7 +18,7 @@ export default function App() {
     <p> Original Dimension: 1870 x 1250</p>
     <p> Original Size: 465.67 KB</p>
     <AdvancedImage height="300" cldImg={cldImage} />
-    <p> <a target="_blank" href={cldImageOptimize.toURL()}>{cldImageOptimize.toURL()}</a></p>
+    <p> <a target="_blank" rel="noreferrer" href={cldImageOptimize.toURL()}>{cldImageOptimize.toURL()}</a></p>
     <AdvancedImage height="300" cldImg={cldImageOptimize} />
     </div>
   )
@@ -41,7 +41,7 @@ export default function App() {
     <p> Original Size: 3.67 MB</p>
 
     <AdvancedVideo controls height="300" cldVid={cldVideo} />
-    <p> <a target="_blank" href={cldVideoOptimize.toURL()}>{cldVideoOptimize.toURL()}</a></p>
+    <p> <a ="_blank" rel="noreferrer" href={cldVideoOptimize.toURL()}>{cldVideoOptimize.toURL()}</a></p>
     <AdvancedVideo controls height="300" cldVid={cldVideoOptimize} />
     </div>
   )
