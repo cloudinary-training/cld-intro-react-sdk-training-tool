@@ -6,7 +6,7 @@ const cloudinaryImages = `import {Cloudinary} from "@cloudinary/url-gen";
 import { AdvancedImage} from "@cloudinary/react";
 
 export default function App() {
-  // instantiate Cloudinary and call it's image function
+  // instantiate Cloudinary and call its image function
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}});
   const cldImage = cld.image('cld-sample');
   const cldImageQ = cld.image('cld-sample');
@@ -26,7 +26,7 @@ const cloudinaryVideoURLs = `import {Cloudinary} from "@cloudinary/url-gen";
 import { AdvancedVideo} from "@cloudinary/react";
 
 export default function App() {
-  // instantiate Cloudinary and call it's video function
+  // instantiate Cloudinary and call its video function
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}});
   const cldVideo = cld.video('climbing');
   const cldVideoQ = cld.video('climbing');
