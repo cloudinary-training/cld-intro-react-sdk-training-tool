@@ -13,7 +13,7 @@ export default function Experiment(props) {
       <div className="collapse">
         <input className="p-0 min-h-0" style={{minHeight: 0}} type="checkbox" />
         <div className="font-sans p-0 min-h-0 text-white collapse-title text-l font-medium bg-cldblue">
-          Click for Experiment
+          Reveal Experiment 
         </div>
         <div className="collapse-content">
           <div>
