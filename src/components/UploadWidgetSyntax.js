@@ -135,7 +135,7 @@ export default function UploadWidgetSyntax() {
     <div>
       <div className="collapse">
         <input type="checkbox" />
-        <div className="font-sans font-bold collapse-title text-xl font-sans text-white bg-cldblue">
+        <div className="font-sans font-bold collapse-title text-l font-sans text-white bg-cldblue">
           Click to view/hide code
         </div>
         <div className="collapse-content">
