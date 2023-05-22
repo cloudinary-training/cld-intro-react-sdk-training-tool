@@ -134,9 +134,9 @@ export default function UploadWidgetSyntax() {
   return (
     <div>
       <div className="collapse">
-        <input type="checkbox" />
-        <div className="font-sans font-bold collapse-title text-l font-sans text-white bg-cldblue">
-          Click to view/hide code
+      <input className="p-0 min-h-0" style={{minHeight: 0}} type="checkbox" />
+        <div className="font-sans p-0 min-h-0 text-white collapse-title text-l font-medium bg-cldblue">
+          Click Here to View/Hide Code
         </div>
         <div className="collapse-content">
           <div>
@@ -149,4 +149,3 @@ export default function UploadWidgetSyntax() {
     </div>
   );
 }
-
