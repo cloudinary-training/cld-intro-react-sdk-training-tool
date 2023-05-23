@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/cld-intro-react-sdk-training-tool/static/css/main.697b3439.css",
-    "main.js": "/cld-intro-react-sdk-training-tool/static/js/main.40d2b258.js",
+    "main.js": "/cld-intro-react-sdk-training-tool/static/js/main.ebdaa897.js",
     "static/js/104.e806ef2c.chunk.js": "/cld-intro-react-sdk-training-tool/static/js/104.e806ef2c.chunk.js",
     "static/js/337.894e9814.chunk.js": "/cld-intro-react-sdk-training-tool/static/js/337.894e9814.chunk.js",
     "static/media/Inter-VariableFont_slnt,wght.ttf": "/cld-intro-react-sdk-training-tool/static/media/Inter-VariableFont_slnt,wght.aadb65ac45347ff46699.ttf",
     "index.html": "/cld-intro-react-sdk-training-tool/index.html",
     "main.697b3439.css.map": "/cld-intro-react-sdk-training-tool/static/css/main.697b3439.css.map",
-    "main.40d2b258.js.map": "/cld-intro-react-sdk-training-tool/static/js/main.40d2b258.js.map",
+    "main.ebdaa897.js.map": "/cld-intro-react-sdk-training-tool/static/js/main.ebdaa897.js.map",
     "104.e806ef2c.chunk.js.map": "/cld-intro-react-sdk-training-tool/static/js/104.e806ef2c.chunk.js.map",
     "337.894e9814.chunk.js.map": "/cld-intro-react-sdk-training-tool/static/js/337.894e9814.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.697b3439.css",
-    "static/js/main.40d2b258.js"
+    "static/js/main.ebdaa897.js"
   ]
 }
