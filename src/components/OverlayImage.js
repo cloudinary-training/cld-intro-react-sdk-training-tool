@@ -85,7 +85,7 @@ export default function OverlayImage() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image Overlaid on Image
+        Image Overlay on Image:
       </h3>{" "}
       <p className={"font-sans text-clddarkblue"}>
         Look for the watermark in the lower right or south east corner of the
@@ -119,7 +119,7 @@ export default function OverlayImage() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Text Overlaid on Video
+        Text Overlay on Video:
       </h2>{" "}
       <p className={"font-sans clddarkblue"}>
         Look for the watermark in the upper left or north west corner of the
