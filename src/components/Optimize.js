@@ -80,12 +80,12 @@ export default function Format() {
           `You will need to use Chrome inspector to see details regarding size, format and content type`,
           `Inspect and note the size of the image after applying cropping, compression and formatting`,
           `Remove "g_auto"`,
-          `What happens to the cropped image and "g_auto" is not applied?`,
+          `What happens to the cropped image when "g_auto" is not applied?`,
           `Modify "q_auto" to "q_80" or use any number to see the difference`,
           `What values of quality do you need to use to get the same compression without pixelation that you get with q_auto?`,
           `Modify the format type to a value that can be used for an image`,
           "What are the potential problems of choosing the image format?",
-          `What happens to the cropped image and "g_auto" is not applied?`,
+          `What happens to the cropped image when "g_auto" is not applied?`,
         ]}
       />
       <SandpackWrapper numberOnPage="2" scriptName={cloudinaryImage} />
@@ -110,7 +110,7 @@ export default function Format() {
           `What values of quality do you need to use to get the same compression without pixelation that you get with q_auto?`,
           `Modify the format type to a value that can be used for an image`,
           "What are the potential problems of choosing the image format?",
-          `What happens to the cropped image and "g_auto" is not applied?`,
+          `What happens to the cropped image when "g_auto" is not applied?`,
         ]}
       />
       <SandpackWrapper numberOnPage="2" scriptName={cloudinaryVideo} />
