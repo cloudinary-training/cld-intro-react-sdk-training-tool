@@ -41,7 +41,7 @@ export default function PadWithBackground() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Pad Images with Background Auto
+        Pad Images (using Background Auto):
       </h3>
       <p className={"font-sans mt-1 mb-1 text-clddarkblue"}>
         You can assign a color or use auto to use the predominant color in the
@@ -70,7 +70,7 @@ return (
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Pad Video with Background Color
+        Pad Video (using Background Color):
       </h3>
       <Experiment
         codeString={`const cldVideo = cld.video('climbing').resize(pad().width(300).height(400).background(color("auto")));

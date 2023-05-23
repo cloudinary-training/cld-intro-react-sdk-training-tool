@@ -51,10 +51,10 @@ export default function UploadWidget() {
         "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
       }
       >
-        Upload Widget with Unsigned Preset
+        Upload Widget using Unsigned Upload Preset:
       </h3>
       <UploadWidgetSyntax />
-      <p className={"font-sans text-clddarkblue"}>Get more information on creating an <a style={{color:"clddarkblue", "textDecoration":"underline"}} href="https://cloudinary.com/documentation/upload_widget#unsigned_uploads">Unsigned Preset</a></p>
+      <p className={"font-sans text-clddarkblue"}>Documentation about <a style={{color:"clddarkblue", "textDecoration":"underline"}} href="https://cloudinary.com/documentation/upload_widget#unsigned_uploads">Unsigned uploads</a> + <a style={{color:"clddarkblue", "textDecoration":"underline"}} href="https://cloudinary.com/documentation/upload_widget#https://cloudinary.com/documentation/create_upload_preset_tutorial">tutorial video</a></p>
       <br/>
       <form className="w-full max-w-sm">
         <div className="md:flex md:items-center mb-6">

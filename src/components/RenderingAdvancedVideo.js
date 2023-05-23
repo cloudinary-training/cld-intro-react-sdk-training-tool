@@ -40,21 +40,10 @@ export default function RenderingAdvancedVideo() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        AdvancedVideo: Deliver Video Elements from a CDN
+        AdvancedVideo: Delivering Video Elements from a CDN
       </h2>
-      <h3
-        className={
-          "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
-        }
-      >
-        Single Video
-      </h3>
 
-      <p className={"font-sans mt-1 mb-1 text-clddarkblue"}>
-        When you are rendering just a single video in your component, you can
-        use "CloudinaryVideo" and supply both Cloud Name and Public ID.
-      </p>
-      <Experiment
+<Experiment
         codeString={`<video height="300px">
             <source src="https://res.cloudinary.com/cloudinary-training/video/upload/climbing.webm?_a=ATCqVAA0" type="video/webm">
             <source src="https://res.cloudinary.com/cloudinary-training/video/upload/climbing.mp4?_a=ATCqVAA0" type="video/mp4">
@@ -72,13 +61,27 @@ export default function RenderingAdvancedVideo() {
           "Add or modify HTML5 video attributes like controls, height, loop, muted, width and height",
         ]}
       />
+
+<h3
+        className={
+          "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
+        }
+      >
+
+        Single Video:
+      </h3>
+
+      <p className={"font-sans mt-1 mb-1 text-clddarkblue"}>
+        When you are rendering just a single video in your component, you can
+        use "CloudinaryVideo" and supply both Cloud Name and Public ID.
+      </p>
       <SandpackWrapper numberOnPage="2" scriptName={singleVideo} />
       <h3
         className={
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Multiple Videos
+        Multiple Videos:
       </h3>
       <p className={"font-sans mt-1 mb-1 text-clddarkblue"}>
         When you are rendering multiple videos in your component, it is more

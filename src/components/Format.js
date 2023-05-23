@@ -75,7 +75,7 @@ export default function Format() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Using Format with Images
+        Using Format with Images:
       </h3>
       <Experiment
         codeString={`<div style={{width: "150px",height: "150px", backgroundColor: "coral"}} >
@@ -85,8 +85,8 @@ cldImage.format("png");`}
           "Experiment with file formats, radius max and transparency."
         }
         instructions={[
-          `Add a background color to the DIV containing the AdvancedImage`,
-          `Note the differences between the image with f_auto applied to it`,
+          `Add a background color to the div containing the AdvancedImage`,
+          `Note the differences between the image with f_auto applied to it, and the original`,
           `If you don't see a difference, try changing the format of the original file to "png"`,
           "Add CSS to the AdvancedImage component to see the actual size of the image rendered",
           "Add colors as demonstrated with the AdvancedVideo component to the background",
@@ -98,7 +98,7 @@ cldImage.format("png");`}
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Using Format with Video
+        Using Format with Video:
       </h3>
       <Experiment
         codeString={`// convert a GIF to a video 

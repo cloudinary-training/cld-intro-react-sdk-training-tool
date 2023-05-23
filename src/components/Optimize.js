@@ -55,24 +55,23 @@ export default function Format() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Optimize: "Auto Everything"
+        <u>Optimize</u>
       </h2>
       <div className={"font-sans text-clddarkblue"}>
-        In these examples you see the combined optimization effects of reducing
+        In these examples, you'll see the combined optimization effects of reducing
         the size of your asset (crop), compressing it (quality), and providing a
-        way for it to get the best file type (format) for the browser or device
-        it's rendered on. The "auto" options make sure that the subject of your
-        cropped asset focused on, the details in your compressed assets are not
-        lost, and you are using the best format for the browser are device you
-        are rendering to.
+        way for the asset to become the best file type (format) for the browser or device
+        the asset is rendered on. The "auto" options ensure that the subject of your
+        cropped asset is focused on, the details in your compressed assets are not
+        lost, and the best format is delivered.
       </div>
       <h3
         className={
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Optimize Images with Crop with Gravity Auto, Format Auto, and Quality
-        Auto
+        Optimize Images (Crop, Gravity Auto, Format Auto, and Quality
+        Auto):
       </h3>
       <Experiment
         codeString={`  cldImageOptimize.quality("80").format("jpg").resize(fill().width(400).height(400));`}
@@ -96,7 +95,8 @@ export default function Format() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Optimize Video with Crop, Auto Gravity, Auto Format and Auto Quality
+        Optimize Video (Crop, Gravity Auto, Format Auto, and Quality
+        Auto):
       </h3>
       <Experiment
         codeString={`cldVideoOptimize.resize(fill().width(244).height(400)).format("mp4").quality("80")`}

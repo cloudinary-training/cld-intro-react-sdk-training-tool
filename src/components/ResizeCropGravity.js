@@ -41,7 +41,7 @@ export default function ResizeCropGravity() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image Resize Crop with Gravity - using a fill crop
+        Image Resize/Crop with Gravity (using fill crop):
       </h3>
       <Experiment
         codeString={`image.resize(fill().width(400).height(400));`}
@@ -60,7 +60,7 @@ export default function ResizeCropGravity() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Video Resize Crop with Gravity - using a fill crop
+        Video Resize/Crop with Gravity (using fill crop):
       </h3>
       <Experiment
         codeString={`video.resize(fill().width(244).height(400));`}

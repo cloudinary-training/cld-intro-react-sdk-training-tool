@@ -24,7 +24,7 @@ export default function App() {
   .resize(fill().height(250).width(250).gravity("auto"))
   .overlay(
     source(
-      text("Sprinkles and Spots", new TextStyle("Arial", 20))
+      text("Puppy Love", new TextStyle("Arial", 20))
       .textColor("#eeeef1")
       .backgroundColor("#ff5050")
     ).position(
@@ -87,7 +87,7 @@ export default function OverlayText() {
       <Experiment
         codeString={` .overlay(
           source(
-            text("Sprinkles and Spots", new TextStyle("Arial", 20))
+            text("Puppy Love", new TextStyle("Arial", 20))
             .textColor("#eeeef1")
             .backgroundColor("#ff5050")
           ).position(
@@ -119,7 +119,7 @@ export default function OverlayText() {
       <Experiment
         codeString={` .overlay(
           source(
-            text("Sprinkles and Spots", new TextStyle("Arial", 20))
+            text("Puppy Love", new TextStyle("Arial", 20))
             .textColor("#eeeef1")
             .backgroundColor("#ff5050")
           ).position(

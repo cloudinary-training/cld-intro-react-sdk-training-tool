@@ -46,7 +46,7 @@ function LazyloadPlugin() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Lazyload Plugin
+        Lazyload Plugin:
       </h2>
       <h3
         className={

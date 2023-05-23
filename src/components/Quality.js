@@ -50,7 +50,7 @@ export default function Quality() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Using Quality with Images
+        Using Quality with Images:
       </h3>
       <Experiment
         codeString={`cldImageQ.quality("auto:best");
@@ -70,7 +70,7 @@ cldImageQ.quality("80");`}
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Using Quality with Video
+        Using Quality with Video:
       </h3>
       <Experiment
         codeString={`cldVideoQ.quality("auto:eco");

@@ -41,7 +41,7 @@ export default function CldBuildVideo() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Scale Image
+        Scale Image:
       </h3>
       <Experiment
         codeString={`image.resize(scale().width(350).height(350))`}
@@ -61,7 +61,7 @@ export default function CldBuildVideo() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Scale Video
+        Scale Video:
       </h3>
       <Experiment
         codeString={`video.resize(scale().width(350).height(350))`}

@@ -38,7 +38,7 @@ function AccessibilityPlugin() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Accessiblity Plugin
+        Accessiblity Plugin:
       </h2>{" "}
       <Experiment
         codeString={`plugins={[accessibility({ mode: "monochrome|colorblind|brightmode|darkmode(default)" })]}`}

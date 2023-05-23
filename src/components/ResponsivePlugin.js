@@ -45,7 +45,7 @@ function ResponsivePlugin() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Responsive Plugin Using Steps Size
+        Responsive Plugin Using Step Size:
       </h2>
       <Experiment
         codeString={` plugins={[responsive({ steps: 100 })]}`}
@@ -63,7 +63,7 @@ function ResponsivePlugin() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Responsive Plugin Using Array of Step Sizes
+        Responsive Plugin Using Array of Step Sizes:
       </h2>
       <Experiment
         codeString={`plugins={[responsive({ steps: [360, 768, 1366]})]}`}

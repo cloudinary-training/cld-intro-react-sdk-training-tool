@@ -115,14 +115,14 @@ export default function Effects() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Effects
+        <u>Effects</u>
       </h2>{" "}
       <h3
         className={
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Apply Effects to both Image and Video: blur and contrast
+        Image and Video Effects (Blur and Contrast):
       </h3>
       <Experiment
         notes={notes}
@@ -135,16 +135,13 @@ export default function Effects() {
           `Remember to import them from "effect"`,
         ]}
       />
-      <p className="font-sans">
-        Apply blur and contrast effects to Images and Videos
-      </p>
       <SandpackWrapper numberOnPage="3" scriptName={multipleImageandVideo} />
       <h3
         className={
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image Only Effects: Grayscale, Sepia, Black and White
+        Image Only Effects (Grayscale, Sepia, Black and White):
       </h3>
       <Experiment
         codeString={`import {colorize, simulateColorBlind, vectorize, pixelate} from "@cloudinary/url-gen/actions/effect";`}
@@ -160,7 +157,7 @@ export default function Effects() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Video Only Effects: Reverse, Boomerang, Preview
+        Video Only Effects (Reverse, Boomerang, Preview):
       </h3>
       <Experiment
         codeString={` const cldVideoaccel = cld.video('purple-hourglass').resize(fill().width(350).height(350).gravity("auto")).effect(accelerate().rate(100));`}

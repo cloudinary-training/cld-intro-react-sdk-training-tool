@@ -60,7 +60,7 @@ export default function URLGenComponent() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image URL Generator
+        Image URL Generator:
       </h3>
      
       <Experiment notes={`The URL Generator is available as an npm package. It provides three classes that 
@@ -88,7 +88,7 @@ const cloudinaryVideo = new CloudinaryVideo("<my public id>", { cloudName: "<my 
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Video URL Generator
+        Video URL Generator:
       </h3>
       <SandpackWrapper numberOnPage="2" scriptName={cloudinaryVideoURLs} />
     </div>

@@ -38,7 +38,7 @@ export default function RenderingAdvancedImage() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        AdvancedImage: Deliver Image Elements from a CDN
+        AdvancedImage: Delivering Image Elements from a CDN
       </h2>
       <Experiment
         codeString={`<img height="300px" alt="Sample Image" src="https://res.cloudinary.com/cloudinary-training/image/upload/cld-sample?_a=AJARNWI0">`}
@@ -55,7 +55,7 @@ export default function RenderingAdvancedImage() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Single Image
+        Single Image:
       </h3>
       <p className={"font-sans mt-1 mb-1 text-clddarkblue"}>
         When you are rendering just a single image in your component, you can
@@ -67,7 +67,7 @@ export default function RenderingAdvancedImage() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Multiple Images
+        Multiple Images:
       </h3>
       <p className={"font-sans mt-1 mb-1 text-clddarkblue"}>
         When you are rendering multiple images in your component, it is more
