@@ -28,7 +28,7 @@ const cldVideo = cld.video('dog-frisbee').resize(pad().width(300).height(400).ba
 export default function App() {
   return (
     <div className="App">
-      <AdvancedVideo cldVid={cldVideo} controls cldPoster="auto" />
+      <AdvancedVideo cldVid={cldVideo} controls />
     </div>
   );
 }
@@ -76,7 +76,7 @@ return (
         codeString={`const cldVideo = cld.video('climbing').resize(pad().width(300).height(400).background(color("auto")));
 //remove background transformation
 const cldVideo = cld.video('dog-frisbee').resize(pad().width(300).height(400));
-<AdvancedVideo style={{outline: "5px solid green"}} cldVid={cldVideo} controls cldPoster="auto" />
+<AdvancedVideo style={{outline: "5px solid green"}} cldVid={cldVideo} controls />
         `}
         experimentTitle={
           "Experiment with the boundaries of an image when you use padding, as well as background colors."

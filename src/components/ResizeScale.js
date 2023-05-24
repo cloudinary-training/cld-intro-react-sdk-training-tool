@@ -27,7 +27,7 @@ video.resize(scale().width(350));
 export default function App() {
   return (
     <div className="App">
-      <AdvancedVideo cldVid={video} controls cldPoster="auto" />
+      <AdvancedVideo cldVid={video} controls />
     </div>
   );
 }
