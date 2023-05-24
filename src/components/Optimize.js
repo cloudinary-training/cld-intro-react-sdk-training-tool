@@ -41,7 +41,7 @@ export default function App() {
     <p> Original Size: 3.67 MB</p>
 
     <AdvancedVideo controls height="300" cldVid={cldVideo} />
-    <p> <a ="_blank" rel="noreferrer" href={cldVideoOptimize.toURL()}>{cldVideoOptimize.toURL()}</a></p>
+    <p> <a target="_blank" rel="noreferrer" href={cldVideoOptimize.toURL()}>{cldVideoOptimize.toURL()}</a></p>
     <AdvancedVideo controls height="300" cldVid={cldVideoOptimize} />
     </div>
   )

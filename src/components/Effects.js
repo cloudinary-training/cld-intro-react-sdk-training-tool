@@ -55,7 +55,7 @@ export default function App() {
   }); 
   const cldGrayScale = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).effect(grayscale());
   const cldSepia = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).effect(sepia());
-  const cldBlackclddarkblue = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).effect(blackwhite());
+  const cldBlackWhite = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).effect(blackwhite());
 
   return (
     <div>
@@ -67,7 +67,7 @@ export default function App() {
       <div>
         <AdvancedImage height="300" alt="Sample" cldImg={cldGrayScale} />
         <AdvancedImage height="300" alt="Sample" cldImg={cldSepia} />
-        <AdvancedImage height="300" alt="Sample" cldImg={cldBlackclddarkblue} />
+        <AdvancedImage height="300" alt="Sample" cldImg={cldBlackWhite} />
       </div>
     </div>
   )

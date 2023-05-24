@@ -4,7 +4,6 @@ import SandpackWrapper from "./SandpackWrapper";
 
 const cloudinaryAdvancedImage = `import {AdvancedImage} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
-import {Transformation} from "@cloudinary/url-gen";
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import {outline, cartoonify} from "@cloudinary/url-gen/actions/effect";
 

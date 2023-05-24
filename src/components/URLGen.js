@@ -65,8 +65,8 @@ export default function URLGenComponent() {
      
       <Experiment notes={`The URL Generator is available as an npm package. It provides three classes that 
       can be used to configure and generate image and video URLs and elements: 
-      Cloudinary, CloudinaryImage, and CloudinaryVideo.As you see how to create Cloudinary 
-      transformations for image and video URLs, you will learn learn how to generate URLs for images and video. 
+      Cloudinary, CloudinaryImage, and CloudinaryVideo. As you see how to create Cloudinary 
+      transformations for image and video URLs, you will learn how to generate URLs for images and video. 
       You need to supply your Cloudinary cloud name and an asset public id to instantiate an asset. 
       Once you have an asset object, you can use url-gen to apply transformation functions to build image and video elements. 
       If you only need the URL, you can call the toURL() function to generate just the URL.`}  
@@ -76,10 +76,10 @@ const cldVideo = cld.video('<my public id>');
 const cloudinaryImage = new CloudinaryImage("<my public id>", { cloudName: "<my cloud name>" });
 const cloudinaryVideo = new CloudinaryVideo("<my public id>", { cloudName: "<my cloud name>" })
         `}
-        experimentTitle={"Experiment by modifying the public id and cloud name."}
+        experimentTitle={"Experiment by modifying the public ID and cloud name."}
         instructions={[
-          "Replace cld.image() and cloudinaryImage() public ids with public ids from your own cloud",
-          `Try some of these other public ids from the "cloudinary-training" cloud: cld-sample-3, cld-sample-5`
+          "Replace cld.image() and cloudinaryImage() public IDs with public IDs from your own cloud",
+          `Try some of these other public IDs from the "cloudinary-training" cloud: cld-sample-3, cld-sample-5`
         ]}
       />
       <SandpackWrapper numberOnPage="2" scriptName={cloudinaryImageURLs} />
