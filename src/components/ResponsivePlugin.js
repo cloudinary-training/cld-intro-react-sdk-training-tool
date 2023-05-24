@@ -28,7 +28,7 @@ const responsiveSteps = `import {CloudinaryImage} from "@cloudinary/url-gen";
         return (
             <div>
             <h3>Render a Responsive Cloudinary Image</h3>
-            <p>Resize viewport to see changes (Step size is 100 pixels)</p>
+            <p>Resize viewport to see changes (various step sizes)</p>
             <AdvancedImage
               cldImg={cloudinaryImage.resize(scale().width(300))}
               plugins={[responsive({ steps: [360, 768, 1366]})]}
@@ -51,7 +51,7 @@ function ResponsivePlugin() {
         codeString={` plugins={[responsive({ steps: 100 })]}`}
         experimentTitle={`Experiment with Responsive Breakpoints`}
         instructions={[
-          `With the Chrome inspector network tab open, start with a small viewport and drag the viewport to increate the width`,
+          `With the Chrome inspector network tab open, start with a small viewport and drag the viewport to increase the width`,
           `Note that larger images get downloaded as the when the viewport has increased by 100px`,
           `Change the step values to see the effect`,
         ]}
@@ -69,7 +69,7 @@ function ResponsivePlugin() {
         codeString={`plugins={[responsive({ steps: [360, 768, 1366]})]}`}
         experimentTitle={`Experiment with Responsive Breakpoints`}
         instructions={[
-          `With the Chrome inspector network tab open, start with a small viewport and drag the viewport to increate the width`,
+          `With the Chrome inspector network tab open, start with a small viewport and drag the viewport to increase the width`,
           `Note that larger images get downloaded as the breakpoints specified are arrived at`,
           `Change the step values to see the effect`,
         ]}

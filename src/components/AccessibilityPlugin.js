@@ -12,7 +12,7 @@ const accessbility = `import {CloudinaryImage} from "@cloudinary/url-gen";
             <div>
             <h3>Render Accessible Images</h3>
             <AdvancedImage cldImg={cloudinaryImage.resize(scale().width(300))} />
-            <h3>Default Accessibility</h3>
+            <h3>Default Accessibility (Dark Mode)</h3>
             <AdvancedImage 
                 cldImg={cloudinaryImage} 
                 plugins={[accessibility()]} />
@@ -21,7 +21,7 @@ const accessbility = `import {CloudinaryImage} from "@cloudinary/url-gen";
                 cldImg={cloudinaryImage}
                 plugins={[accessibility({ mode: "colorblind" })]}
             />
-            <h3>Monochrome Accessiblity</h3>
+            <h3>Monochrome Accessibility</h3>
             <AdvancedImage
                 cldImg={cloudinaryImage}
                 plugins={[accessibility({ mode: "monochrome" })]}
