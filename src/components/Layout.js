@@ -162,7 +162,7 @@ export default function Layout() {
 
   return (
     <div className="bg-cldgray min-h-screen flex flex-col">
-      <header className="bg-cldgray sticky top-0 h-14 flex justify-center items-center">
+      <header className="bg-cldgray z-40 sticky top-0 h-14 flex justify-center items-center">
         <div className="text-3xl font-sans text-clddarkblue">
           {" "}
           Cloudinary React SDK Playground 
