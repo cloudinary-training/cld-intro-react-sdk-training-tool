@@ -4,7 +4,6 @@ import Experiment from "./experiments";
 import SandpackWrapper from "./SandpackWrapper";
 
 const responsiveStepSize = `import {CloudinaryImage} from "@cloudinary/url-gen";
-    import {scale} from "@cloudinary/url-gen/actions/resize";
     import { AdvancedImage, responsive} from "@cloudinary/react";
     export default function App() {
         const cloudinaryImage = new CloudinaryImage("cld-sample", { cloudName: "cloudinary-training" });
@@ -13,7 +12,7 @@ const responsiveStepSize = `import {CloudinaryImage} from "@cloudinary/url-gen";
             <h3>Render a Responsive Cloudinary Image</h3>
             <p>Resize viewport to see changes (Step size is 100 pixels)</p>
             <AdvancedImage
-              cldImg={cloudinaryImage.resize(scale().width(300))}
+              cldImg={cloudinaryImage}
               plugins={[responsive({ steps: 100 })]}
             />
             </div>
@@ -21,7 +20,6 @@ const responsiveStepSize = `import {CloudinaryImage} from "@cloudinary/url-gen";
     }`;
 
 const responsiveSteps = `import {CloudinaryImage} from "@cloudinary/url-gen";
-    import {scale} from "@cloudinary/url-gen/actions/resize";
     import { AdvancedImage, responsive} from "@cloudinary/react";
     export default function App() {
         const cloudinaryImage = new CloudinaryImage("cld-sample", { cloudName: "cloudinary-training" });
@@ -30,7 +28,7 @@ const responsiveSteps = `import {CloudinaryImage} from "@cloudinary/url-gen";
             <h3>Render a Responsive Cloudinary Image</h3>
             <p>Resize viewport to see changes (various step sizes)</p>
             <AdvancedImage
-              cldImg={cloudinaryImage.resize(scale().width(300))}
+              cldImg={cloudinaryImage}
               plugins={[responsive({ steps: [360, 768, 1366]})]}
             />
             </div>

@@ -75,7 +75,7 @@ export default function App() {
 const multipleVideos = `import {AdvancedVideo} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 import {fill} from "@cloudinary/url-gen/actions/resize";
-import { VideoEdit, trim, preview} from "@cloudinary/url-gen/actions/videoEdit";
+import { trim, preview} from "@cloudinary/url-gen/actions/videoEdit";
 import {reverse, boomerang} from "@cloudinary/url-gen/actions/effect";
 
 // import {Effect} from "@cloudinary/url-gen/actions/effect";
@@ -89,7 +89,7 @@ export default function App() {
   const cldVideoReverse = cld.video('purple-hourglass').resize(fill().width(350).height(350).gravity("auto")).effect(reverse());
   const cldVideoBoomerang = cld.video('purple-hourglass').resize(fill().width(350).height(350).gravity("auto")).effect(boomerang());
   const cldVideoBarneysFirstCar = cld.video('video-trn/barneys-first-car');
-  const cldVideoPreview = cld.video('video-trn/barneys-first-car').videoEdit(VideoEdit.preview());
+  const cldVideoPreview = cld.video('video-trn/barneys-first-car').videoEdit(preview());
 
   return (
     <div>
