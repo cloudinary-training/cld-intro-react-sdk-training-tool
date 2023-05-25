@@ -31,7 +31,7 @@ export default function App() {
         <div style={{ height: "300px" }} />
             <AdvancedImage  style={{display: "block", marginTop: "300px", width: "300px", height: "300px"}}  cldImg={brownSheep} plugins={[lazyload({rootMargin: '5px 5px 5px 5px', threshold: 0.1})]} />
             <AdvancedImage  style={{display: "block", marginTop: "300px", width: "300px", height: "300px"}}  cldImg={cat} plugins={[lazyload({rootMargin: '5px 5px 5px 5px', threshold: 0.15})]} />
-            <AdvancedImage  style={{display: "block", marginTop: "300px", width: "30px", height: "300px"}}  cldImg={woman} plugins={[lazyload({rootMargin: '5px 5px 5px 5px', threshold: 0.2})]} />
+            <AdvancedImage  style={{display: "block", marginTop: "300px", width: "300px", height: "300px"}}  cldImg={woman} plugins={[lazyload({rootMargin: '5px 5px 5px 5px', threshold: 0.2})]} />
             <AdvancedImage  style={{display: "block", marginTop: "300px", width: "300px", height: "300px"}}  cldImg={bear} plugins={[lazyload({rootMargin: '5px 5px 5px 5px', threshold: 0.25})]} />
 
         </div>
