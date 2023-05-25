@@ -8,8 +8,8 @@ to either images for video, while many can be used on both image and video.`;
 const multipleImageandVideo = `import {AdvancedImage,AdvancedVideo} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 import {thumbnail, fill} from "@cloudinary/url-gen/actions/resize";
-import {Adjust} from "@cloudinary/url-gen/actions/adjust"; // for contrast
-import {blur, contrast} from "@cloudinary/url-gen/actions/effect";
+import {contrast} from "@cloudinary/url-gen/actions/adjust";
+import {blur} from "@cloudinary/url-gen/actions/effect";
 export default function App() {
   const cld = new Cloudinary({
     cloud: {
@@ -18,11 +18,11 @@ export default function App() {
   }); 
   const cldImage = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face"));
   const cldBlur = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).effect(blur().strength(800));
-  const cldContrast = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).adjust(Adjust.contrast().level(100));
+  const cldContrast = cld.image('cld-sample').resize(thumbnail().width(150).height(150).gravity("face")).adjust(contrast().level(100));
 
   const cldVideo = cld.video('climbing').resize(fill().width(150).height(150).gravity("auto"));
   const cldVideoBlur = cld.video('climbing').resize(fill().width(150).height(150).gravity("auto")).effect(blur().strength(70));
-  const cldVideoContrast = cld.video('climbing').resize(fill().width(150).height(150).gravity("auto")).adjust(Adjust.contrast().level(100));
+  const cldVideoContrast = cld.video('climbing').resize(fill().width(150).height(150).gravity("auto")).adjust(contrast().level(100));
 
   console.log(cldVideo.toURL());
 
@@ -75,7 +75,7 @@ export default function App() {
 const multipleVideos = `import {AdvancedVideo} from '@cloudinary/react';
 import {Cloudinary} from "@cloudinary/url-gen";
 import {fill} from "@cloudinary/url-gen/actions/resize";
-import { VideoEdit, trim, preview} from "@cloudinary/url-gen/actions/videoEdit";
+import { trim, preview} from "@cloudinary/url-gen/actions/videoEdit";
 import {reverse, boomerang} from "@cloudinary/url-gen/actions/effect";
 
 // import {Effect} from "@cloudinary/url-gen/actions/effect";
@@ -89,7 +89,7 @@ export default function App() {
   const cldVideoReverse = cld.video('purple-hourglass').resize(fill().width(350).height(350).gravity("auto")).effect(reverse());
   const cldVideoBoomerang = cld.video('purple-hourglass').resize(fill().width(350).height(350).gravity("auto")).effect(boomerang());
   const cldVideoBarneysFirstCar = cld.video('video-trn/barneys-first-car');
-  const cldVideoPreview = cld.video('video-trn/barneys-first-car').videoEdit(VideoEdit.preview());
+  const cldVideoPreview = cld.video('video-trn/barneys-first-car').videoEdit(preview());
 
   return (
     <div>

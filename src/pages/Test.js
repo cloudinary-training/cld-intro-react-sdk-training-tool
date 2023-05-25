@@ -4,7 +4,7 @@ function Test() {
     .overlay(
       source(
         image("cld-white-logo").transformation(
-          new Transformation().resize(scale().width(50).regionRelative())
+          new Transformation().resize(scale().width(50))
         )
       ).position(
         new Position().gravity(compass("north_east")).offsetX(20).offsetY(20)

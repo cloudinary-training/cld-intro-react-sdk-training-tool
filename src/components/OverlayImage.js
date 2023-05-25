@@ -10,7 +10,7 @@ import {source} from "@cloudinary/url-gen/actions/overlay";
 import {Position} from "@cloudinary/url-gen/qualifiers/position";
 import {image} from "@cloudinary/url-gen/qualifiers/source";
 import {compass} from "@cloudinary/url-gen/qualifiers/gravity";
-import { Adjust, brightness, opacity } from "@cloudinary/url-gen/actions/adjust";
+import { brightness, opacity } from "@cloudinary/url-gen/actions/adjust";
 
 export default function App() {
   const cld = new Cloudinary({
@@ -26,9 +26,9 @@ export default function App() {
     source(
       image("logo-big").transformation(
         new Transformation()
-        .adjust(Adjust.opacity(50))
-        .adjust(Adjust.brightness().level(10))
-        .resize(scale().width(50).regionRelative())
+        .adjust(opacity(50))
+        .adjust(brightness().level(10))
+        .resize(scale().width(50))
       )
     ).position(
       new Position().gravity(compass("south_east")).offsetX(20).offsetY(20)
@@ -63,7 +63,7 @@ export default function App() {
     .overlay(
       source(
         image("cld-white-logo").transformation(
-          new Transformation().resize(scale().width(50).regionRelative())
+          new Transformation().resize(scale().width(50))
         )
       ).position(
         new Position().gravity(compass("north_west")).offsetX(20).offsetY(20)
@@ -96,9 +96,9 @@ export default function OverlayImage() {
   source(
     image("logo-big").transformation(
       new Transformation()
-      .adjust(Adjust.opacity(50))
-      .adjust(Adjust.brightness().level(10))
-      .resize(scale().width(50).regionRelative())
+      .adjust(opacity(50))
+      .adjust(brightness().level(10))
+      .resize(scale().width(50))
     )
   ).position(
     new Position().gravity(compass("center")).offsetX(-90).offsetY(-90)
@@ -129,7 +129,7 @@ export default function OverlayImage() {
         codeString={`.overlay(
   source(
     image("cld-white-logo").transformation(
-      new Transformation().resize(scale().width(50).regionRelative())
+      new Transformation().resize(scale().width(50))
     )
   ).position(
     new Position().gravity(compass("center")).offsetX(-90).offsetY(-90)

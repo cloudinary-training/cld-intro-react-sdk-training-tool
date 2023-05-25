@@ -6,7 +6,7 @@ const cloudinaryAdvancedVideo = `import {AdvancedVideo,AdvancedImage} from '@clo
 import {Cloudinary} from "@cloudinary/url-gen";
 import {scale, fill} from "@cloudinary/url-gen/actions/resize";
 import {audioCodec,bitRate} from "@cloudinary/url-gen/actions/transcode";
-import { VideoEdit, trim} from "@cloudinary/url-gen/actions/videoEdit";
+import {trim} from "@cloudinary/url-gen/actions/videoEdit";
 
 const cld = new Cloudinary({
 cloud: {
@@ -24,27 +24,27 @@ const musicURL = music.toURL();
 // show the first 20 seconds by ending at 20 seconds
 const first20Seconds = cld.video('video-trn/barneys-first-car');
 first20Seconds
-    .videoEdit(VideoEdit.trim().endOffset("20.0"))  
+    .videoEdit(trim().endOffset("20.0"))  
     .resize(fill().width(400).height(300))
 
 // show the last 20 seconds by starting at 
 let start = ((23*60 + 51) - 20) + "";
 const last20Seconds = cld.video('video-trn/barneys-first-car');
 last20Seconds
-    .videoEdit(VideoEdit.trim().startOffset(start))
+    .videoEdit(trim().startOffset(start))
     .resize(fill().width(400).height(300));
 
 // show 20 seconds at about 17 minutes seconds
 const cldVideoInTheMiddle = cld.video('video-trn/barneys-first-car');
 cldVideoInTheMiddle
-    .videoEdit(VideoEdit.trim().startOffset("1000.0").duration("20.0"))
+    .videoEdit(trim().startOffset("1000.0").duration("20.0"))
     .resize(fill().width(400).height(300));
 console.log("url",cldVideoInTheMiddle.toURL());
 
 // create an image from a video frame
 const imageFromFrame = cld.video('video-trn/barneys-first-car')
     .resize(fill().width(400).height(300))
-    .videoEdit(VideoEdit.trim().startOffset("10.0"))
+    .videoEdit(trim().startOffset("10.0"))
     .format("jpg");
 
 export default function App() {
@@ -59,7 +59,7 @@ export default function App() {
       <AdvancedVideo cldVid={first20Seconds} controls />
       <p>Deliver just the last 20 seconds</p>
       <AdvancedVideo cldVid={last20Seconds} controls />
-      <p>Deliver just 17 seconds in the middle of the video</p>
+      <p>Deliver 20 seconds from the middle of the video</p>
       <AdvancedVideo cldVid={cldVideoInTheMiddle} controls />
       <p>Create an image out of the frame at 10 seconds</p>
       <AdvancedImage cldImg={imageFromFrame} />
