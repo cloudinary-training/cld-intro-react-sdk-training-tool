@@ -79,7 +79,7 @@ export default function OverlayText() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image Overlay on Image:
+        Text Overlay on Image:
       </h2>{" "}
       <p className="font-sans text-clddarkblue">
         Look for the message in the central, lower area the image.

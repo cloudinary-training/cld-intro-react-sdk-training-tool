@@ -85,7 +85,7 @@ export default function OverlayImage() {
           "font-sans font-medium leading-tight text-2xl mt-0 mb-2 text-clddarkblue"
         }
       >
-        Image Overlay on Image:
+        Text Overlay on Image:
       </h3>{" "}
       <p className={"font-sans text-clddarkblue"}>
         Look for the watermark in the lower right or south east corner of the
