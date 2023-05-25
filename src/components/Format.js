@@ -14,11 +14,11 @@ export default function App() {
   const cld = new Cloudinary({cloud: {cloudName: 'cloudinary-training'}});
 
   const cldImage = cld.image("cld-sample")
-    .resize(thumbnail().height(150).width(150).gravity("auto"))
+    .resize(thumbnail().height(150px).width(150px).gravity("auto"))
     .roundCorners(byRadius("max"));
   
   const cldImageAutoFormat = cld.image("cld-sample")
-    .resize(thumbnail().height(150).width(150).gravity("auto"))
+    .resize(thumbnail().height(150px).width(150px).gravity("auto"))
     .roundCorners(byRadius("max"));
 
   cldImageAutoFormat.format("auto");
