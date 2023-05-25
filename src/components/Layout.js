@@ -208,7 +208,7 @@ export default function Layout() {
           <p>© 2023 Cloudinary Customer Education</p>
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a href="https://github.com/clouidnary-training/cld-intro-react-sdk-training-tool">
+          <a href="https://github.com/cloudinary-training/cld-intro-react-sdk-training-tool">
             <img
               title="Source code for this application"
               target="_blank"
