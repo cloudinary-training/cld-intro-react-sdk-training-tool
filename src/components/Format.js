@@ -26,11 +26,11 @@ export default function App() {
   return (
     <div>
       <p> <a target="_blank" href={cldImage.toURL()}>{cldImage.toURL()}</a></p>
-      <div style={{width: "150px",height: "150px", backgroundColor: "coral"}} >
+      <div style={{width: "150",height: "150", backgroundColor: "coral"}} >
         <AdvancedImage cldImg={cldImage} />
       </div>
       <p> <a target="_blank" href={cldImageAutoFormat.toURL()}>{cldImageAutoFormat.toURL()}</a></p>
-      <div  style={{width: "150px",height: "150px", backgroundColor: "coral"}} >
+      <div  style={{width: "150",height: "150", backgroundColor: "coral"}} >
           <AdvancedImage cldImg={cldImageAutoFormat} />
       </div>
     </div>

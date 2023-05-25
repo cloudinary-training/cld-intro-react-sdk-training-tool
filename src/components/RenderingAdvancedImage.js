@@ -8,7 +8,7 @@ export default function App() {
   const cldImage = new CloudinaryImage('cld-sample',{cloudName: 'cloudinary-training'}); 
   return (
     <div>
-      <AdvancedImage height="300px" alt="Sample Image" cldImg={cldImage} />
+      <AdvancedImage height="300" alt="Sample Image" cldImg={cldImage} />
     </div>
   )
 }`;
@@ -24,8 +24,8 @@ export default function App() {
   const cldImage2 = cld.image('cld-sample-2');
   return (
     <div>
-    <AdvancedImage height="300px" alt="Sample Image 1" cldImg={cldImage1} />
-    <AdvancedImage height="300px" alt="Sample Image 2" cldImg={cldImage2} />
+    <AdvancedImage height="300" alt="Sample Image 1" cldImg={cldImage1} />
+    <AdvancedImage height="300" alt="Sample Image 2" cldImg={cldImage2} />
     </div>
   )
 }`;
