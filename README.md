@@ -16,14 +16,12 @@ Link to image/gif showing how to create unsigned preset.
 
 ### Available Scripts
 
-In the project directory, please run `npm i` to install the necessary libraries for the project. From there, run `npm start`.
+In the project directory, please run `npm i` to install the necessary libraries for the project. From there, run `npm start` Doing so will run the app in the development mode.
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
 
 #### `npm run build`
 
