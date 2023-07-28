@@ -6,7 +6,7 @@ const cloudinaryAdvancedImage = `import {AdvancedImage} from '@cloudinary/react'
 import {Cloudinary} from "@cloudinary/url-gen";
 import {fill} from "@cloudinary/url-gen/actions/resize";
 import {edit} from "@cloudinary/url-gen/actions/animated";
-import {defaultImage} from "@cloudinary/url-gen//actions/delivery";
+import {defaultImage} from "@cloudinary/url-gen/actions/delivery";
 
 export default function App() {
   const cld = new Cloudinary({
