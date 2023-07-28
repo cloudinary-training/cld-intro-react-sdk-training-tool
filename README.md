@@ -10,7 +10,7 @@ In order to create an unsigned preset, you will need to log into your Cloudinary
 
 The authorization provided by an unsigned preset allows you to code and configure an Upload Widget on a web page without using the API SECRET, which is used for backend uploads. Your API SECRET should always be kept a secret. When you are using an unsigned preset, it is a good idea to require authentication and authorization to the web page that renders the Upload Widget.  This will prevent unwanted access/uploading to your cloud. 
 
-Link to image/gif showing how to create unsigned preset.
+More details on creating unsigned upload presets are available in our [documentation](https://cloudinary.com/documentation/upload_presets).
 
 ## This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
