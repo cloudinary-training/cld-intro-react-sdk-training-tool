@@ -16,7 +16,7 @@ Link to image/gif showing how to create unsigned preset.
 
 ### Available Scripts
 
-In the project directory, please run #### `npm i` to install the necessary libraries for the project. From there, run #### `npm start`.
+In the project directory, please run `npm i` to install the necessary libraries for the project. From there, run `npm start`.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
