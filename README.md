@@ -16,12 +16,11 @@ Link to image/gif showing how to create unsigned preset.
 
 ### Available Scripts
 
-In the project directory, please run `npm i` to install the necessary libraries for the project. From there, run `npm start` Doing so will run the app in the development mode.
+In the project directory, please run `npm i` to install the necessary libraries for the project. From there, run `npm start`. Doing so will run the app in the development mode.
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The page will reload when you make changes. You may also see any lint errors in the console.
 
 #### `npm run build`
 
@@ -36,7 +35,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 #### Analyzing the Bundle Size
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
 
 ## Deployment
 This code is deployed to https://cloudinary-training.github.io/cld-intro-react-sdk-training-tool/ using GitHub Pages.
